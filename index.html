@@ -9,7 +9,67 @@
   </head>
   <body>
     <div class="container">
-      <h1>Which track is right for you?</h1>
+      <h1>Which Epicodus track is right for you?</h1>
+      <h4>Take the following survey to find out:</h4>
+      <form>
+        <ol>
+          <li>What is your name?</li>
+          <div class="form-group">
+            <input class="form-control" id="name" type="text">
+          </div>
+          <li>Which of the following best describes you?</li>
+          <div class="form-group">
+            <select class="form-control" id="front-end">
+              <option disabled selected="true">Please select one:</option>
+              <option value="front-end1">front-end answer</option>
+              <option value="front-end2">front-end answer</option>
+              <option value="back-end">back-end answer</option>
+            </select>
+          </div>
+          <li>What type of applications are you most interested in working on?</li>
+          <div class="radio">
+            <label>
+              <input type="radio" name="app-type" value="mobile" checked>
+              Mobile applications
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="app-type" value="web">
+              Web applications
+            </label>
+          </div>
+          <li>What size company would you like to work for?</li>
+          <div class="radio">
+            <label>
+              <input type="radio" name="companySize" value="small" checked>
+              Less than 100 employees
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="companySize" value="medium">
+              100 - 1,000 employees
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="companySize" value="large">
+              Over 1,000 employees
+            </label>
+          </div>
+          <li>Which of the following sounds most appealing to you?</li>
+          <div class="form-group">
+            <select class="form-control" id="">
+              <option disabled selected="true">Please select one:</option>
+              <option value="java">java answer</option>
+              <option value="cSharp">C# answer</option>
+            </select>
+        </ol>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="results">
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
   </body>
