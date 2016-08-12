@@ -22,9 +22,9 @@
           <div class="form-group">
             <select class="form-control" id="front-end">
               <option disabled selected="true">Please select one:</option>
-              <option value="front-end1">front-end answer</option>
-              <option value="front-end2">front-end answer</option>
-              <option value="back-end">back-end answer</option>
+              <option value="front-end1">I am a visual person and enjoy art</option>
+              <option value="front-end2">I like to be creative and design things</option>
+              <option value="back-end">I am more logical and think analytically</option>
             </select>
           </div>
           <li>What type of applications are you most interested in working on?</li>
@@ -63,50 +63,76 @@
           <div class="form-group">
             <select class="form-control" id="javaOrC">
               <option disabled selected="true">Please select one:</option>
-              <option value="java">java answer</option>
-              <option value="cSharp">C# answer</option>
+              <option value="java">Working on high-performance applications</option>
+              <option value="cSharp">Working on building internal business software</option>
             </select>
         </ol>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
       <div class="results">
-        <p id="greeting"><span id="inputName"></span>, based on your answers from our survey, the recommended track for you is:</p>
+        <h4 id="greeting"><span id="inputName"></span>, based on your answers from our survey, the recommended track for you is:</h4>
         <h2 id="track-name"></h2>
         <div id="css">
-          <img src="img/" alt="">
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-          </ul>
-          <p>Check out more information on the <a href="http://www.epicodus.com/css" target="_blank">CSS</a> and <a href="http://www.epicodus.com/design" target="_blank">Design</a> courses offered at Epicodus to make sure this is the right track for you!</p>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="img-responsive" src="img/css.jpg" alt="css logo">
+            </div>
+            <div class="col-sm-8">
+              <p><strong>This track is great for people who:</strong></p>
+              <ul>
+                <li>Can spend hours obsessing over visual details like layouts, navigation, and colors.</li>
+                <li>Have a knack for design.</li>
+                <li>Want to use a lot of artistic creativity.</li>
+              </ul>
+              <p><em>Check out more information</em> on the <a href="http://www.epicodus.com/css" target="_blank">CSS</a> and <a href="http://www.epicodus.com/design" target="_blank">Design</a> courses offered at Epicodus.</p>
+            </div>
+          </div>
         </div>
         <div id="java">
-          <img src="img/" alt="">
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-          </ul>
-          <p>Check out more information on the <a href="http://www.epicodus.com/java" target="_blank">Java</a> and <a href="http://www.epicodus.com/android" target="_blank">Android</a> courses offered at Epicodus to make sure this is the right track for you!</p>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="img-responsive" src="img/java.jpg" alt="java logo">
+            </div>
+            <div class="col-sm-8">
+              <p><strong>This track is great for people who:</strong></p>
+              <ul>
+                <li>Are looking to build interactive web applications.</li>
+                <li>Want to work at a startup or smaller company. This is where Ruby is most popular because it allows them to build their product quickly.</li>
+              </ul>
+              <p>Check out more information on the <a href="http://www.epicodus.com/java" target="_blank">Java</a> and <a href="http://www.epicodus.com/android" target="_blank">Android</a> courses offered at Epicodus.</p>
+            </div>
+          </div>
         </div>
         <div id="ruby">
-          <img src="img/" alt="">
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-          </ul>
-          <p>Check out more information on the <a href="http://www.epicodus.com/ruby" target="_blank">Ruby</a> and <a href="http://www.epicodus.com/rails" target="_blank">Rails</a> courses offered at Epicodus to make sure this is the right track for you!</p>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="img-responsive" src="img/ruby.jpg" alt="ruby and rails logo">
+            </div>
+            <div class="col-sm-8">
+              <p><strong>This track is great for people who:</strong></p>
+              <ul>
+                <li>Are interested in working for an enterprise level company.</li>
+                <li>Or want to work as an Android developer. </li>
+                <li>Or want to work with high-performance applications.</li>
+              </ul>
+              <p>Check out more information on the <a href="http://www.epicodus.com/ruby" target="_blank">Ruby</a> and <a href="http://www.epicodus.com/rails" target="_blank">Rails</a> courses offered at Epicodus.</p>
+            </div>
+          </div>
         </div>
         <div id="c-sharp">
-          <img src="img/" alt="">
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-          </ul>
-          <p>Check out more information on the <a href="http://www.epicodus.com/c-sharp" target="_blank">C#</a> and <a href="http://www.epicodus.com/net" target="_blank">.Net</a> courses offered at Epicodus to make sure this is the right track for you!</p>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="img-responsive" src="img/c-sharp.png" alt="c# and .net logo">
+            </div>
+            <div class="col-sm-8">
+              <p><strong>This track is great for people who:</strong></p>
+              <ul>
+                <li>Want to work for bigger established businesses.</li>
+                <li>Are interested in working on building internal software.</li>
+              </ul>
+              <p>Check out more information on the <a href="http://www.epicodus.com/c-sharp" target="_blank">C#</a> and <a href="http://www.epicodus.com/net" target="_blank">.Net</a> courses offered at Epicodus.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
