@@ -6,6 +6,12 @@ $(document).ready(function(){
     var companySize = $("input:radio[name=companySize]:checked").val();
     var javaOrC = $("#javaOrC").val();
 
+    $(".results #inputName").text(name);
+
+    $("button").click(function() {
+      $(".results #greeting, #track-name, #css, #java, #ruby, #c-sharp").hide();
+    });
+
     if (frontEnd === "front-end1" || frontEnd === "front-end2") {
       $(".results #track-name").text("CSS/Design");
       $(".results #greeting, #track-name, #css").show();
@@ -22,8 +28,6 @@ $(document).ready(function(){
       $(".results #track-name").text("Java/Android");
       $(".results #greeting, #track-name, #java").show();
     }
-
-    $(".results #inputName").text(name);
 
     event.preventDefault();
   });
