@@ -1,0 +1,7 @@
+img {
+  float: left;
+}
+
+#greeting, #track-name, #css, #java, #ruby, #c-sharp {
+  display: none;
+}

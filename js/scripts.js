@@ -8,14 +8,19 @@ $(document).ready(function(){
 
     if (frontEnd === "front-end1" || frontEnd === "front-end2") {
       $(".results #track-name").text("CSS/Design");
+      $(".results #greeting, #track-name, #css").show();
     } else if (appType === "mobile") {
       $(".results #track-name").text("Java/Android");
+      $(".results #greeting, #track-name, #java").show();
     } else if (companySize === "small") {
       $(".results #track-name").text("Ruby/Rails");
+      $(".results #greeting, #track-name, #ruby").show();
     } else if (javaOrC === "cSharp") {
       $(".results #track-name").text("C#/.Net");
+      $(".results #greeting, #track-name, #c-sharp").show();
     } else {
       $(".results #track-name").text("Java/Android");
+      $(".results #greeting, #track-name, #java").show();
     }
 
     $(".results #inputName").text(name);
