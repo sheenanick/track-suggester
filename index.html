@@ -15,17 +15,21 @@
       <form>
         <ol>
           <li>What is your name?</li>
-          <div class="form-group">
-            <input class="form-control" id="name" type="text">
+          <div class="form-group row">
+            <div class="col-sm-4">
+              <input class="form-control" id="name" type="text">
+            </div>
           </div>
           <li>Which of the following best describes you?</li>
-          <div class="form-group">
-            <select class="form-control" id="front-end">
-              <option disabled selected="true">Please select one:</option>
-              <option value="front-end1">I am a visual person and enjoy art</option>
-              <option value="front-end2">I like to be creative and design things</option>
-              <option value="back-end">I am more logical and think analytically</option>
-            </select>
+          <div class="form-group row">
+            <div class="col-sm-7">
+              <select class="form-control" id="front-end">
+                <option disabled selected="true">Please select one:</option>
+                <option value="front-end1">I am a visual person and enjoy art</option>
+                <option value="front-end2">I like to be creative and design things</option>
+                <option value="back-end">I am more logical and think analytically</option>
+              </select>
+            </div>
           </div>
           <li>What type of applications are you most interested in working on?</li>
           <div class="radio">
@@ -60,12 +64,14 @@
             </label>
           </div>
           <li>Which of the following sounds most appealing to you?</li>
-          <div class="form-group">
-            <select class="form-control" id="javaOrC">
-              <option disabled selected="true">Please select one:</option>
-              <option value="java">Working on high-performance applications</option>
-              <option value="cSharp">Working on building internal business software</option>
-            </select>
+          <div class="form-group row">
+            <div class="col-sm-7">
+              <select class="form-control" id="javaOrC">
+                <option disabled selected="true">Please select one:</option>
+                <option value="java">Working on high-performance applications</option>
+                <option value="cSharp">Working on building internal business software</option>
+              </select>
+            </div>
         </ol>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
@@ -73,11 +79,11 @@
         <h4 id="greeting"><span id="inputName"></span>, based on your answers from our survey, the recommended track for you is:</h4>
         <h2 id="track-name"></h2>
         <div id="css">
-          <div class="row">
+          <div class="row result-box">
             <div class="col-sm-4">
               <img class="img-responsive" src="img/css.jpg" alt="css logo">
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-8 track-description">
               <p><strong>This track is great for people who:</strong></p>
               <ul>
                 <li>Can spend hours obsessing over visual details like layouts, navigation, and colors.</li>
@@ -89,11 +95,11 @@
           </div>
         </div>
         <div id="java">
-          <div class="row">
+          <div class="row result-box">
             <div class="col-sm-4">
               <img class="img-responsive" src="img/java.jpg" alt="java logo">
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-8 track-description">
               <p><strong>This track is great for people who:</strong></p>
               <ul>
                 <li>Are looking to build interactive web applications.</li>
@@ -104,11 +110,11 @@
           </div>
         </div>
         <div id="ruby">
-          <div class="row">
+          <div class="row result-box">
             <div class="col-sm-4">
               <img class="img-responsive" src="img/ruby.jpg" alt="ruby and rails logo">
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-8 track-description">
               <p><strong>This track is great for people who:</strong></p>
               <ul>
                 <li>Are interested in working for an enterprise level company.</li>
@@ -120,11 +126,11 @@
           </div>
         </div>
         <div id="c-sharp">
-          <div class="row">
+          <div class="row result-box">
             <div class="col-sm-4">
               <img class="img-responsive" src="img/c-sharp.png" alt="c# and .net logo">
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-8 track-description">
               <p><strong>This track is great for people who:</strong></p>
               <ul>
                 <li>Want to work for bigger established businesses.</li>
