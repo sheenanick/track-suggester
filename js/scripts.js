@@ -5,26 +5,27 @@ $(document).ready(function(){
     var appType = $("input:radio[name=app-type]:checked").val();
     var companySize = $("input:radio[name=companySize]:checked").val();
     var javaOrC = $("#javaOrC").val();
+
+    $(".results #greeting, #track-name, #css, #java, #ruby, #c-sharp").hide();
+
     $(".results #inputName").text(name);
-    $("button").click(function() {
-      $(".results #greeting, #track-name, #css, #java, #ruby, #c-sharp").hide();
-    });
+    $(".results #greeting").show();
+
+    function generateOutput(trackName, trackId) {
+      $(".results #track-name").text('"' + trackName + '"').show();
+      $(trackId).show();
+    }
     if (name && frontEnd && appType && companySize && javaOrC) {
       if (frontEnd === "front-end1" || frontEnd === "front-end2") {
-        $(".results #track-name").text("CSS/Design");
-        $(".results #greeting, #track-name, #css").show();
+        generateOutput("CSS/Design", "#css");
       } else if (appType === "mobile") {
-        $(".results #track-name").text("Java/Android");
-        $(".results #greeting, #track-name, #java").show();
+        generateOutput("Java/Android", "#java");
       } else if (companySize === "small") {
-        $(".results #track-name").text("Ruby/Rails");
-        $(".results #greeting, #track-name, #ruby").show();
+        generateOutput("Ruby/Rails", "#ruby");
       } else if (javaOrC === "cSharp") {
-        $(".results #track-name").text("C#/.Net");
-        $(".results #greeting, #track-name, #c-sharp").show();
+        generateOutput("C#/.Net", "#c-sharp");
       } else {
-        $(".results #track-name").text("Java/Android");
-        $(".results #greeting, #track-name, #java").show();
+        generateOutput("Java/Android", "#java");
       }
     } else {
       alert("Please answer all of the questions.")
