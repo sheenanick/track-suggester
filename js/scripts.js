@@ -9,13 +9,13 @@ $(document).ready(function(){
     $(".results #greeting, #track-name, #css, #java, #ruby, #c-sharp").hide();
 
     $(".results #inputName").text(name);
-    $(".results #greeting").show();
 
     function generateOutput(trackName, trackId) {
       $(".results #track-name").text('"' + trackName + '"').show();
       $(trackId).show();
     }
     if (name && frontEnd && appType && companySize && javaOrC) {
+      $(".results #greeting").show();
       if (frontEnd === "front-end1" || frontEnd === "front-end2") {
         generateOutput("CSS/Design", "#css");
       } else if (appType === "mobile") {
