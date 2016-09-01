@@ -11,15 +11,30 @@ h3 {
   text-align: center;
   padding: 5px 0 15px;
 }
+h5 {
+  font-style: italic;
+  margin-top: 15px;
+}
 .container {
   margin-bottom: 75px;
+}
+.jumbotron {
+  min-height: 550px;
+}
+.title-page {
+  text-align: center;
+  padding: 90px 5px 90px 5px;
+  background-image: url("../img/background.jpeg");
+  background-size: cover;
+}
+.title-header {
+  text-shadow: 2px 2px #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
 }
 .btn {
   display: block;
   margin: auto;
-}
-.results {
-  padding-top: 30px;
 }
 .result-box{
   margin: 0px;
@@ -30,20 +45,9 @@ h3 {
 .track-description {
   padding-top: 10px;
 }
-#title-page {
-  text-align: center;
-  padding: 90px 5px 90px 5px;
-  background-image: url("../img/background.jpeg");
-  background-size: cover;
-}
-#title-header {
-  text-shadow: 2px 2px #fff;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
-}
 #question1, #question2, #question3, #question4, #question5,
-#greeting, #track-name, #css, #java, #ruby, #c-sharp {
-  /*display: none;*/
+#greeting, #track-name, #css, #java, #ruby, #c-sharp, .restart-button {
+  display: none;
 }
 #greeting {
   color: #00ace6;

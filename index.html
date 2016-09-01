@@ -11,31 +11,31 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <div id="title-page">
-          <div id="title-header">
+        <div class="title-page">
+          <div class="title-header">
             <h1>Which Epicodus track is right for you?</h1>
             <h3>Take the following survey to find out.</h3>
           </div>
-          <button class="btn btn-success" type="button">Start</button>
+          <button id="start" class="btn btn-success" type="submit">Start</button>
         </div>
         <form id="question1">
           <h3>What is your name?</h3>
           <div class="row">
             <div class="col-sm-4 col-sm-offset-4">
               <div class="form-group">
-                <input class="form-control" id="name" type="text">
+                <input required class="form-control" id="name" type="text">
               </div>
-              <button id="q1" class="btn btn-primary" type="button">Next</button>
-            </form>
+              <button class="btn btn-primary" type="submit">Next</button>
+            </div>
           </div>
-        </div>
+        </form>
         <form id="question2">
           <h3>Which of the following best describes you?</h3>
           <div class="row">
             <div class="col-sm-6 col-sm-offset-4">
               <div class="radio">
                 <label>
-                  <input type="radio" name="front-end" value="front-end1">
+                  <input type="radio" name="front-end" value="front-end1" checked>
                   I am a visual person and enjoy art
                 </label>
               </div>
@@ -53,7 +53,7 @@
               </div>
             </div>
           </div>
-          <button id="q2" class="btn btn-primary" type="button">Next</button>
+          <button class="btn btn-primary" type="submit">Next</button>
         </form>
         <form id="question3">
           <h3>What type of applications are you most interested in?</h3>
@@ -61,7 +61,7 @@
             <div class="col-sm-6 col-sm-offset-4">
               <div class="radio">
                 <label>
-                  <input type="radio" name="app-type" value="mobile">
+                  <input type="radio" name="app-type" value="mobile" checked>
                   I want to work on mobile applications
                 </label>
               </div>
@@ -73,7 +73,7 @@
               </div>
             </div>
           </div>
-          <button id="q3" class="btn btn-primary" type="button">Next</button>
+          <button class="btn btn-primary" type="submit">Next</button>
         </form>
         <form id="question4">
           <h3>What size company would you like to work for?</h3>
@@ -99,7 +99,7 @@
               </div>
             </div>
           </div>
-          <button id="q4" class="btn btn-primary" type="button">Next</button>
+          <button class="btn btn-primary" type="submit">Next</button>
         </form>
         <form id="question5">
           <h3>Which would you like to work on most?</h3>
@@ -107,7 +107,7 @@
             <div class="col-sm-6 col-sm-offset-4">
               <div class="radio">
                 <label>
-                  <input type="radio" name="java-c" value="java">
+                  <input type="radio" name="java-c" value="java" checked>
                   High-performance applications
                 </label>
               </div>
@@ -119,11 +119,9 @@
               </div>
             </div>
           </div>
-          <button id="q5" class="btn btn-primary" type="button">Next</button>
+          <button class="btn btn-primary" type="submit">Next</button>
         </form>
-      </div>
-      <div class="results">
-        <h4 id="greeting"><span id="input-name"></span>, based on your answers from our survey, the recommended track for you is:</h4>
+        <h4 id="greeting"><span id="insert-name"></span>, the recommended track for you is:</h4>
         <h2 id="track-name"></h2>
         <div id="css">
           <div class="row result-box">
@@ -137,7 +135,7 @@
                 <li>Have a knack for design.</li>
                 <li>Want to use a lot of artistic creativity.</li>
               </ul>
-              <p><em>Check out more information</em> on the <a href="http://www.epicodus.com/css" target="_blank">CSS</a> and <a href="http://www.epicodus.com/design" target="_blank">Design</a> courses offered at Epicodus.</p>
+              <h5>Check out more information on the <a href="http://www.epicodus.com/css" target="_blank">CSS</a> and <a href="http://www.epicodus.com/design" target="_blank">Design</a> courses offered at Epicodus.</h5>
             </div>
           </div>
         </div>
@@ -153,7 +151,7 @@
                 <li>Or want to work as an Android developer. </li>
                 <li>Or want to work with high-performance applications.</li>
               </ul>
-              <p><em>Check out more information</em> on the <a href="http://www.epicodus.com/java" target="_blank">Java</a> and <a href="http://www.epicodus.com/android" target="_blank">Android</a> courses offered at Epicodus.</p>
+              <h5>Check out more information on the <a href="http://www.epicodus.com/java" target="_blank">Java</a> and <a href="http://www.epicodus.com/android" target="_blank">Android</a> courses offered at Epicodus.</h5>
             </div>
           </div>
         </div>
@@ -168,7 +166,7 @@
                 <li>Are looking to build interactive web applications.</li>
                 <li>Want to work at a startup or smaller company --Ruby is most popular at these companies because it allows them to build their product quickly.</li>
               </ul>
-              <p><em>Check out more information</em> on the <a href="http://www.epicodus.com/ruby" target="_blank">Ruby</a> and <a href="http://www.epicodus.com/rails" target="_blank">Rails</a> courses offered at Epicodus.</p>
+              <h5>Check out more information on the <a href="http://www.epicodus.com/ruby" target="_blank">Ruby</a> and <a href="http://www.epicodus.com/rails" target="_blank">Rails</a> courses offered at Epicodus.</h5>
             </div>
           </div>
         </div>
@@ -183,9 +181,12 @@
                 <li>Want to work for bigger established businesses.</li>
                 <li>Are interested in working on building internal software.</li>
               </ul>
-              <p><em>Check out more information</em> on the <a href="http://www.epicodus.com/c-sharp" target="_blank">C#</a> and <a href="http://www.epicodus.com/net" target="_blank">.NET</a> courses offered at Epicodus.</p>
+              <h5>Check out more information on the <a href="http://www.epicodus.com/c-sharp" target="_blank">C#</a> and <a href="http://www.epicodus.com/net" target="_blank">.NET</a> courses offered at Epicodus.</h5>
             </div>
           </div>
+        </div>
+        <div class="restart-button">
+          <button class="btn btn-primary" id="restart" type="button">Take the survey again</button>
         </div>
       </div>
     </div>
