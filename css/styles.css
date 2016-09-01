@@ -4,7 +4,7 @@ h2 {
   border-top: 1px solid #808080;
   border-right: 1px solid #808080;
   border-left: 1px solid #808080;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding: 20px;
 }
 h3 {
@@ -15,15 +15,14 @@ h5 {
   font-style: italic;
   margin-top: 15px;
 }
-.container {
-  margin-bottom: 75px;
-}
 .jumbotron {
-  min-height: 550px;
+  min-height: 480px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 .title-page {
   text-align: center;
-  padding: 90px 5px 90px 5px;
+  padding: 100px 5px 100px 5px;
   background-image: url("../img/background.jpeg");
   background-size: cover;
 }
@@ -37,7 +36,7 @@ h5 {
   margin: auto;
 }
 .result-box{
-  margin: 0px;
+  margin: 0;
   padding: 10px;
   border: 1px solid #808080;
   min-height: 200px;
