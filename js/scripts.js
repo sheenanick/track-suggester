@@ -3,17 +3,14 @@ $(document).ready(function(){
     var name = $("input#name").val();
     var frontEnd = $("#front-end").val();
     var appType = $("input:radio[name=app-type]:checked").val();
-    var companySize = $("input:radio[name=companySize]:checked").val();
-    var javaOrC = $("#javaOrC").val();
+    var companySize = $("input:radio[name=size]:checked").val();
+    var javaOrC = $("#java-c").val();
 
     $(".results #greeting, #track-name, #css, #java, #ruby, #c-sharp").hide();
 
-    $(".results #inputName").text(name);
+    $(".results #input-name").text(name);
 
-    function generateOutput(trackName, trackId) {
-      $(".results #track-name").text('"' + trackName + '"').show();
-      $(trackId).show();
-    }
+
     if (name && frontEnd && appType && companySize && javaOrC) {
       $(".results #greeting").show();
       if (frontEnd === "front-end1" || frontEnd === "front-end2") {
@@ -23,12 +20,14 @@ $(document).ready(function(){
       } else if (companySize === "small") {
         generateOutput("Ruby/Rails", "#ruby");
       } else if (javaOrC === "cSharp") {
-        generateOutput("C#/.Net", "#c-sharp");
+        generateOutput("C#/.NET", "#c-sharp");
       } else {
         generateOutput("Java/Android", "#java");
       }
-    } else {
-      alert("Please answer all of the questions.")
+    }
+    function generateOutput(trackName, trackId) {
+      $(".results #track-name").text('"' + trackName + '"').show();
+      $(trackId).show();
     }
     event.preventDefault();
   });

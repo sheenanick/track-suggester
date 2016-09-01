@@ -1,35 +1,22 @@
-#greeting, #track-name, #css, #java, #ruby, #c-sharp {
-  display: none;
-}
-h1 {
-  text-align: center;
-  text-shadow: 2px 2px #fff;
-  padding-top: 90px;
-  padding-bottom: 90px;
-  padding-right: 5px;
-  padding-left: 5px;
-  background-image: url("../img/background.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 h2 {
   text-align: center;
-  padding: 20px;
   background-color: #e6e6e6;
-  margin-bottom: 0px;
-  border-left: 1px solid #808080;
-  border-right: 1px solid #808080;
   border-top: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-left: 1px solid #808080;
+  margin-bottom: 0px;
+  padding: 20px;
 }
-h4 {
-  padding-top: 5px;
-  padding-bottom: 15px;
-}
-#greeting {
-  color: #00ace6;
+h3 {
+  text-align: center;
+  padding: 5px 0 15px;
 }
 .container {
   margin-bottom: 75px;
+}
+.btn {
+  display: block;
+  margin: auto;
 }
 .results {
   padding-top: 30px;
@@ -38,7 +25,29 @@ h4 {
   margin: 0px;
   padding: 10px;
   border: 1px solid #808080;
+  min-height: 200px;
 }
 .track-description {
   padding-top: 10px;
+}
+#title-page {
+  text-align: center;
+  padding: 90px 5px 90px 5px;
+  background-image: url("../img/background.jpeg");
+  background-size: cover;
+}
+#title-header {
+  text-shadow: 2px 2px #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+#question1, #question2, #question3, #question4, #question5,
+#greeting, #track-name, #css, #java, #ruby, #c-sharp {
+  /*display: none;*/
+}
+#greeting {
+  color: #00ace6;
+}
+#c-sharp img {
+  padding: 15px 0 15px;
 }

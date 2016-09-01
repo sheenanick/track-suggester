@@ -10,73 +10,120 @@
   </head>
   <body>
     <div class="container">
-      <h1>Which Epicodus track is right for you?</h1>
-      <h4>Take the following survey to find out:</h4>
-      <form>
-        <ol>
-          <li>What is your name?</li>
-          <div class="form-group row">
-            <div class="col-sm-4">
-              <input class="form-control" id="name" type="text">
+      <div class="jumbotron">
+        <div id="title-page">
+          <div id="title-header">
+            <h1>Which Epicodus track is right for you?</h1>
+            <h3>Take the following survey to find out.</h3>
+          </div>
+          <button class="btn btn-success" type="button">Start</button>
+        </div>
+        <form id="question1">
+          <h3>What is your name?</h3>
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+              <div class="form-group">
+                <input class="form-control" id="name" type="text">
+              </div>
+              <button id="q1" class="btn btn-primary" type="button">Next</button>
+            </form>
+          </div>
+        </div>
+        <form id="question2">
+          <h3>Which of the following best describes you?</h3>
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-4">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="front-end" value="front-end1">
+                  I am a visual person and enjoy art
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="front-end" value="front-end2">
+                  I like to be creative and design things
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="front-end" value="back-end">
+                  I am more logical and think analytically
+                </label>
+              </div>
             </div>
           </div>
-          <li>Which of the following best describes you?</li>
-          <div class="form-group row">
-            <div class="col-sm-7">
-              <select class="form-control" id="front-end">
-                <option disabled selected="true">Please select one:</option>
-                <option value="front-end1">I am a visual person and enjoy art</option>
-                <option value="front-end2">I like to be creative and design things</option>
-                <option value="back-end">I am more logical and think analytically</option>
-              </select>
+          <button id="q2" class="btn btn-primary" type="button">Next</button>
+        </form>
+        <form id="question3">
+          <h3>What type of applications are you most interested in?</h3>
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-4">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="app-type" value="mobile">
+                  I want to work on mobile applications
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="app-type" value="web">
+                  I want to work on web applications
+                </label>
+              </div>
             </div>
           </div>
-          <li>What type of applications are you most interested in working on?</li>
-          <div class="radio">
-            <label>
-              <input type="radio" name="app-type" value="mobile" checked>
-              Mobile applications
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="app-type" value="web">
-              Web applications
-            </label>
-          </div>
-          <li>What size company would you like to work for?</li>
-          <div class="radio">
-            <label>
-              <input type="radio" name="companySize" value="small" checked>
-              Less than 100 employees
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="companySize" value="medium">
-              100 - 1,000 employees
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="companySize" value="large">
-              Over 1,000 employees
-            </label>
-          </div>
-          <li>Which of the following sounds most appealing to you?</li>
-          <div class="form-group row">
-            <div class="col-sm-7">
-              <select class="form-control" id="javaOrC">
-                <option disabled selected="true">Please select one:</option>
-                <option value="java">Working on high-performance applications</option>
-                <option value="cSharp">Working on building internal business software</option>
-              </select>
+          <button id="q3" class="btn btn-primary" type="button">Next</button>
+        </form>
+        <form id="question4">
+          <h3>What size company would you like to work for?</h3>
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-4">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="small" checked>
+                  Less than 100 employees
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="medium">
+                  100 - 1,000 employees
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="large">
+                  Over 1,000 employees
+                </label>
+              </div>
             </div>
-        </ol>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+          </div>
+          <button id="q4" class="btn btn-primary" type="button">Next</button>
+        </form>
+        <form id="question5">
+          <h3>Which would you like to work on most?</h3>
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-4">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="java-c" value="java">
+                  High-performance applications
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="java-c" value="cSharp">
+                  Building internal business software
+                </label>
+              </div>
+            </div>
+          </div>
+          <button id="q5" class="btn btn-primary" type="button">Next</button>
+        </form>
+      </div>
       <div class="results">
-        <h4 id="greeting"><span id="inputName"></span>, based on your answers from our survey, the recommended track for you is:</h4>
+        <h4 id="greeting"><span id="input-name"></span>, based on your answers from our survey, the recommended track for you is:</h4>
         <h2 id="track-name"></h2>
         <div id="css">
           <div class="row result-box">
@@ -136,7 +183,7 @@
                 <li>Want to work for bigger established businesses.</li>
                 <li>Are interested in working on building internal software.</li>
               </ul>
-              <p><em>Check out more information</em> on the <a href="http://www.epicodus.com/c-sharp" target="_blank">C#</a> and <a href="http://www.epicodus.com/net" target="_blank">.Net</a> courses offered at Epicodus.</p>
+              <p><em>Check out more information</em> on the <a href="http://www.epicodus.com/c-sharp" target="_blank">C#</a> and <a href="http://www.epicodus.com/net" target="_blank">.NET</a> courses offered at Epicodus.</p>
             </div>
           </div>
         </div>
