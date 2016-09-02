@@ -60,7 +60,7 @@ $(document).ready(function(){
   });
   $("form#question5").submit(function(){
     event.preventDefault();
-    survey.javaOrC = $("#java-c").val();
+    survey.javaOrC = $("input:radio[name=java-c]:checked").val();
     $("form#question5").hide();
     generateOutput(survey.selectTrack());
     $("#greeting, .restart-button").show();
