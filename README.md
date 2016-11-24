@@ -11,7 +11,7 @@ This is a survey created to suggest to the user which track to take at Epicodus.
 ## Setup/Installation Requirements
 
 * `git clone https://github.com/sheenanick/track-suggester`
-* Open index.html with your web browser of choice.
+* Open index.html with the web browser of your choice.
 
 ## GitHub Pages link
 
